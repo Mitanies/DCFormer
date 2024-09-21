@@ -42,7 +42,7 @@ To train Module Scale of DCFormer, please run:
 ```bash
  python run_dc_scale.py -f 27 -b 128  --train 1 --layers 6 -s 3 
 ```
-if you want to use spatial masks, add --MAE at the end.
+if you want to use spatial masks, add --MAE at the end and use -smn_r to set the selection range.
 
 To train Module Depth of DCFormer, please run:
 ```bash
