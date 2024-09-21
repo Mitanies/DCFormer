@@ -29,12 +29,12 @@ We set up the MPI-INF-3DHP dataset in the same way as [P-STMO](https://github.co
 ### Human3.6M
 To evaluate our DCFormer model on the 2D keypoints obtained by CPN, please run:
 ```bash
- python run_dc_agg.py -f 243 -b 128  --train 0 --layers 6 -s 1 -k 'cpn_ft_h36m_dbb' --reload 1 --previous_dir_scale ./checkpoint/model_243_DCFormer/agg_scale_5_4033.pth --previous_dir_depth ./checkpoint/model_243_DCFormer/agg_depth_5_4033.pth --previous_dir_agg ./checkpoint/model_243_DCFormer/agg_5_4033.pth
+ python run_dc_agg.py -f 243 -b 128  --train 0 --layers 6 -s 1 -k 'cpn_ft_h36m_dbb' --reload 1 --previous_dir_scale ./checkpoint/Human36M/agg_scale_5_4033.pth --previous_dir_depth ./checkpoint/Human36M/agg_depth_5_4033.pth --previous_dir_agg ./checkpoint/Human36M/agg_5_4033.pth
 ```
 ### MPI-INF-3DHP
 The pre-trained models and codes for DCFormer are currently undergoing updates. In the meantime, you can run this code to observe the results for 81 frames.
 ```bash
- python run_3dhp_dc_agg.py -f 81 -b 128  --train 0 --layers 6 -s 1 --reload 1 --previous_dir_scale ./checkpoint/model_81_DCFormer/3dhp_agg_scale_4_2282.pth --previous_dir_depth ./checkpoint/model_81_DCFormer/3dhp_agg_depth_4_2282.pth --previous_dir_agg ./checkpoint/model_81_DCFormer/3dhp_agg_4_2282.pth
+ python run_3dhp_dc_agg.py -f 81 -b 128  --train 0 --layers 6 -s 1 --reload 1 --previous_dir_scale ./checkpoint/3DHP/3dhp_agg_scale_4_2282.pth --previous_dir_depth ./checkpoint/3DHP/3dhp_agg_depth_4_2282.pth --previous_dir_agg ./checkpoint/3DHP/3dhp_agg_4_2282.pth
 ```
 ## Training from scratch
 ### Human3.6M
