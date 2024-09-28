@@ -31,6 +31,9 @@ To evaluate our DCFormer model on the 2D keypoints obtained by CPN, please run:
 ```bash
  python run_dc_agg.py -f 243 -b 128  --train 0 --layers 6 -s 1 -k 'cpn_ft_h36m_dbb' --reload 1 --previous_dir_scale ./checkpoint/Human36M/agg_scale_5_4033.pth --previous_dir_depth ./checkpoint/Human36M/agg_depth_5_4033.pth --previous_dir_agg ./checkpoint/Human36M/agg_5_4033.pth
 ```
+```bash
+ python run_dc_agg.py -f 27 -b 128  --train 0 --layers 6 -s 1 -k 'cpn_ft_h36m_dbb' --reload 1 --previous_dir_scale ./checkpoint/Human36M/agg_scale_1_4233.pth --previous_dir_depth ./checkpoint/Human36M/agg_depth_1_4233.pth --previous_dir_agg ./checkpoint/Human36M/agg_1_4233.pth
+```
 ### MPI-INF-3DHP
 The pre-trained models and codes for DCFormer are currently undergoing updates. In the meantime, you can run this code to observe the results for 81 frames.
 ```bash
