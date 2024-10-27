@@ -27,7 +27,7 @@ We set up the MPI-INF-3DHP dataset in the same way as [P-STMO](https://github.co
 
 ## Evaluation
 ### Human3.6M
-To evaluate our DCFormer model on the 2D keypoints obtained by CPN, please run:
+To evaluate our DCFormer model on the 2D keypoints obtained by CPN, please run:  
 243 frames:
 ```bash
  python run_dc_agg.py -f 243 -b 128  --train 0 --layers 6 -s 1 -k 'cpn_ft_h36m_dbb' --reload 1 --previous_dir_scale ./checkpoint/Human36M/agg_scale_5_4033.pth --previous_dir_depth ./checkpoint/Human36M/agg_depth_5_4033.pth --previous_dir_agg ./checkpoint/Human36M/agg_5_4033.pth
